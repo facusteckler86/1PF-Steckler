@@ -1,17 +1,18 @@
+<!-- <h1>Hola Facundo</h1> -->
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
+    <p>Menu</p>
     @if (showFiller) {
-      <p>Lorem, ipsum dolor sit amet consectetur.</p>
+      <p>Opciones</p>
     }
     <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
+      Hola de nuevo
     </button>
   </mat-drawer>
 
   <div class="example-sidenav-content">
     <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
+      Bienvenido
     </button>
   </div>
 
