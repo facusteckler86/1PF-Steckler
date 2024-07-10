@@ -1,20 +1,51 @@
-<!-- <h1>Hola Facundo</h1> -->
+
 <mat-drawer-container class="example-container" autosize>
+
+    <!-- BARRA LATERAL DEL MENU -->
+
+
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <p>Menu</p>
     @if (showFiller) {
       <p>Opciones</p>
     }
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Hola de nuevo
+    <button mat-raised-button (click)="showFiller = !showFiller" mat-raised-button>
+      Menu
     </button>
   </mat-drawer>
 
-  <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
+    <!-- CONTENIDO -->
+
+      <!-- Toolbar inicio-->
+    <mat-toolbar style="background-color: red;">
+
+      <button
+      (click)="drawer.toggle()"
+        mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>apps</mat-icon>
+      </button>
+        <span>Alumnos</span>
+          <!-- <div class="example-button-container">
+          <button mat-fab extended routerLink="Alumnos">
+          <mat-icon>Apps</mat-icon>
+          </div> -->
+
+          <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon></mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>home</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <!-- Toolbar fin -->
+
+    <!-- <div class="example-sidenav-content">
+    <button type="button" mat-button >
       Bienvenido
     </button>
-  </div>
+  </div> -->
 
 </mat-drawer-container>
 
