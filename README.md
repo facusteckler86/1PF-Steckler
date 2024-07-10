@@ -1,6 +1,6 @@
 # Final Angular CoderHouse
 
-https://www.softplan.com.br/wp-content/uploads/2024/01/image-10-1024x320.png.webp
+<img src="./public/assets/img/angi.jpg" alt="logo de Angular">
 
 
 
