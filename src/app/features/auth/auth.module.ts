@@ -14,7 +14,7 @@ import {MatSelectModule} from '@angular/material/select';
     AuthComponent
   ],
   imports: [
-    CommonModule,LoginModule,MatCardModule,MatIconModule,MatSelectModule
+    CommonModule,LoginModule,MatCardModule,MatIconModule,MatSelectModule,
   ]
 })
 export class AuthModule { }

@@ -3,15 +3,22 @@
 
     <!-- BARRA LATERAL DEL MENU -->
 
+    <mat-drawer #drawer class="example-sidenav" mode="side">
 
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Menu</p>
+      <mat-nav-list>
+        <a mat-list-item href="...">Inicio</a>
+        <a mat-list-item href="...">Cursos</a>
+        <a mat-list-item href="...">Alumnos</a>
+        <a mat-list-item href="...">Inscripciones</a>
+      </mat-nav-list>
+
+      <!-- <p>Menu</p>
     @if (showFiller) {
       <p>Opciones</p>
     }
     <button mat-raised-button (click)="showFiller = !showFiller" mat-raised-button>
       Menu
-    </button>
+    </button> -->
   </mat-drawer>
 
     <!-- CONTENIDO -->
@@ -38,7 +45,9 @@
         <mat-icon>home</mat-icon>
       </button>
     </mat-toolbar>
-
+      <main class="p-7,m-7">
+      <app-courses></app-courses>
+    </main>
     <!-- Toolbar fin -->
 
     <!-- <div class="example-sidenav-content">
