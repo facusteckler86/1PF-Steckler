@@ -1,3 +1,5 @@
+<!-- dialogo entre con el usuario para crear cursos y elegir fechas -->
+
 <h3 mat-dialog-title>Crear Curso</h3>
 
 <mat-dialog-content>
@@ -7,6 +9,8 @@
     <input formControlName="name" matInput />
     <mat-error>El campo es requerido</mat-error>
   </mat-form-field>
+
+      <!-- Rango de fechas -->
 
   <mat-form-field>
 
@@ -20,20 +24,15 @@
     </mat-date-range-input>
 
     <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
-    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-date-range-picker #picker></mat-date-range-picker>
-
-    <!-- @if (range.controls.start.hasError('matStartDateInvalid')) {
-      <mat-error>Invalid start date</mat-error>
-    }
-    @if (range.controls.end.hasError('matEndDateInvalid')) {
-      <mat-error>Invalid end date</mat-error>
-    } -->
-  </mat-form-field>
+     <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+     <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
 
 
 </form>
 </mat-dialog-content>
+
+<!-- Botones de cierre del dialogo -->
 
 <mat-dialog-actions>
   <button mat-dialog-close mat-flat-button>Cancelar</button>

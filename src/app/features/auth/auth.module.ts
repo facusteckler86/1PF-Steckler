@@ -13,6 +13,7 @@ import {MatSelectModule} from '@angular/material/select';
   declarations: [
     AuthComponent
   ],
+  exports: [AuthComponent],
   imports: [
     CommonModule,LoginModule,MatCardModule,MatIconModule,MatSelectModule,
   ]
