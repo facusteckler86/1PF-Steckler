@@ -4,6 +4,7 @@ import { AuthComponent } from './auth.component';
 import { LoginModule } from './login/login.module';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -13,7 +14,7 @@ import {MatIconModule} from '@angular/material/icon';
     AuthComponent
   ],
   imports: [
-    CommonModule,LoginModule,MatCardModule,MatIconModule
+    CommonModule,LoginModule,MatCardModule,MatIconModule,MatSelectModule
   ]
 })
 export class AuthModule { }
