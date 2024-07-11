@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthComponent } from './auth.component';
+import { LoginModule } from './login/login.module';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 
@@ -9,7 +13,7 @@ import { AuthComponent } from './auth.component';
     AuthComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,LoginModule,MatCardModule,MatIconModule
   ]
 })
 export class AuthModule { }
