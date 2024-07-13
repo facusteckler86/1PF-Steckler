@@ -11,6 +11,7 @@ import {MatListModule} from '@angular/material/list';
 
 
 
+
 @NgModule({
   declarations: [
     DashboardComponent
@@ -24,7 +25,8 @@ import {MatListModule} from '@angular/material/list';
     MatToolbarModule,
     MatInputModule,
     CoursesModule,
-    MatListModule
+    MatListModule,
+
   ]
 })
 export class DashboardModule { }

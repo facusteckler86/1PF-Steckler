@@ -12,37 +12,27 @@
         <a mat-list-item href="...">Inscripciones</a>
       </mat-nav-list>
 
-  </mat-drawer>
+      </mat-drawer>
 
     <!-- CONTENIDO -->
 
       <!-- Toolbar inicio-->
-    <mat-toolbar style="background-color: rgb(172, 162, 162);">
 
-        <!-- Lo tengo que dejar como comentario, porque me larga error la palabra drawer en el
-        codigo -->
+      <mat-toolbar>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>apps</mat-icon>
+        </button>
+        <span>Alumnos</span>
+        <span class="example-spacer"></span>
 
-      <!-- <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>apps</mat-icon>
-      </button> -->
-        <!-- <span>Alumnos</span>
-          <div class="example-button-container">
-          <button mat-fab extended routerLink="Alumnos">
-          <mat-icon>Apps</mat-icon>
-          </div> -->
+      </mat-toolbar>
 
-          <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon></mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>home</mat-icon>
-      </button>
-    </mat-toolbar>
-      <main class="p-7,m-7">
+
+
+
       <app-courses></app-courses>
-    </main>
+
     <!-- Toolbar fin -->
 
-</mat-drawer-container>
+  <!-- </mat-drawer-container> -->
 
