@@ -12,6 +12,8 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatTableModule} from '@angular/material/table';
+import { SharedModule } from '../../../shared/shared.module';
+//import { NombreCompletoPipe } from '../../../shared/pipes/nombre-completo.pipe';
 
 
 
@@ -31,7 +33,9 @@ import {MatTableModule} from '@angular/material/table';
     MatInputModule,
     ReactiveFormsModule,
     MatDatepickerModule,
-    MatTableModule
+    MatTableModule,
+    SharedModule,
+    //NombreCompletoPipe
   ]
 })
 export class CoursesModule { }

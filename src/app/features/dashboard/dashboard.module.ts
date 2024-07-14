@@ -8,6 +8,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatInputModule} from '@angular/material/input';
 import { CoursesModule } from './courses/courses.module';
 import {MatListModule} from '@angular/material/list';
+import { SharedModule } from '../../shared/shared.module';
+
 
 
 
@@ -26,6 +28,7 @@ import {MatListModule} from '@angular/material/list';
     MatInputModule,
     CoursesModule,
     MatListModule,
+    SharedModule
 
   ]
 })
