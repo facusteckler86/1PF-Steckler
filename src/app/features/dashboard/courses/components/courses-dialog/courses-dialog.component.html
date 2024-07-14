@@ -1,5 +1,9 @@
 <!-- dialogo entre con el usuario para crear cursos y elegir fechas -->
 
+<h2 mat-dialog-title>
+  {{ editingCourse ? "Editando " + editingCourse.name : "Crear curso" }}
+</h2>
+
 <h3 mat-dialog-title>Crear Curso</h3>
 
 <mat-dialog-content>
