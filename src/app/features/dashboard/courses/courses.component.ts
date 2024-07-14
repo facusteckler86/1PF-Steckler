@@ -41,6 +41,7 @@ export class CoursesComponent {
     }
 
   ];
+element: any;
 
 
     constructor(private matDialog: MatDialog){ }
