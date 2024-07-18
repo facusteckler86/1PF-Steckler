@@ -6,10 +6,10 @@
     <mat-drawer [opened]="true" class="example-sidenav" mode="side">
 
       <mat-nav-list>
-        <a mat-list-item href="...">Inicio</a>
-        <a mat-list-item href="...">Cursos</a>
-        <a mat-list-item href="...">Alumnos</a>
-        <a mat-list-item href="...">Inscripciones</a>
+        <a mat-list-item routerLink="['/inicio']" [activated]="true">Inicio</a>
+        <a mat-list-item routerLink="['/courses']" [activated]="true">Cursos</a>
+        <a mat-list-item routerLink="['']" [activated]="true">Alumnos</a>
+        <a mat-list-item routerLink="['/Inscripciones]" [activated]="true">Inscripciones</a>
       </mat-nav-list>
 
       </mat-drawer>
@@ -20,6 +20,8 @@
 
       <!-- No puedo usar el codigo (click)="drawer.toggle()" porque me indica que desconoce
       la palabra drawer -->
+
+
 
       <mat-toolbar>
         <button mat-icon-button class="example-icon">
