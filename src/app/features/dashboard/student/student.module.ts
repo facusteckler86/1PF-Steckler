@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { StudentRoutingModule } from './student-routing.module';
 import {MatTableModule} from '@angular/material/table';
+import { StudentComponent } from './student.component';
 
 
 
@@ -10,7 +11,7 @@ import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [StudentComponent],
 
-    imports: [
+    imports: [StudentComponent,
     CommonModule,
     StudentRoutingModule,
     MatTableModule
