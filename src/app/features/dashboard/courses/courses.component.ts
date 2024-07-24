@@ -66,3 +66,5 @@ element: any;
 }
 
 
+
+export { Course };

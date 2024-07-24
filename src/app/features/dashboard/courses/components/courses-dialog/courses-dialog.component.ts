@@ -14,7 +14,7 @@ courseForm: FormGroup;
 
 constructor(private fb: FormBuilder,
             private matDialogRef : MatDialogRef<CoursesDialogComponent>,
-          @Inject(MAT_DIALOG_DATA) public editingCourse?: Course) {
+    @Inject(MAT_DIALOG_DATA) public editingCourse?: Course) {
 
     this.courseForm = this.fb.group({
       name: [null, Validators.required],
