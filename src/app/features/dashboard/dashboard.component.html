@@ -10,6 +10,7 @@
         <a mat-list-item routerLink="['/courses']" [activated]="true">Cursos</a>
         <a mat-list-item routerLink="['']" [activated]="true">Alumnos</a>
         <a mat-list-item routerLink="['/Inscripciones]" [activated]="true">Inscripciones</a>
+        <a (click)="logout()" mat-list-item>Salir</a>
       </mat-nav-list>
 
       </mat-drawer>
@@ -19,7 +20,9 @@
       <!-- Toolbar inicio-->
 
             <mat-toolbar>
-              <button mat-icon-button class="example-icon">
+              <button
+              (click)="drawer.toggle()"
+              mat-icon-button class="example-icon">
                 <mat-icon>apps</mat-icon>
               </button>
               <span>Alumnos</span>
