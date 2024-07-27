@@ -3,22 +3,24 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './features/auth/login/login.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { CoursesComponent } from './features/dashboard/courses/courses.component';
+import { AuthComponent } from './features/auth/auth.component';
 
 const routes: Routes = [
   {
-    path: "auth",
-    component: LoginComponent,
+    path: "dashboard",
+    loadChildren: () => import("./features/dashboard/dashboard.module").then((refArchivo)=> refArchivo.DashboardModule)
+
   },
   {
-    path: "dashboard",
-    component: DashboardComponent,
-    children: [
-      {
-        path: "courses",
-        component: CoursesComponent
-      }
-    ]
-}
+    path: "auth",
+    loadChildren: () => import("./features/auth/auth.module").then((refArhivo)=> refArhivo.AuthModule)
+  },
+  {
+    path: "login",
+    loadChildren: () => import("./features/auth/login/login.module").then((refArchivo)=> refArchivo.LoginModule)
+  }
+
+
 ];
 
 @NgModule({

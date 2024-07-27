@@ -14,7 +14,7 @@ export class CoursesComponent {
 
   displayedColumns: string[] = ['id', 'name', 'starDate', "endDate", "actions"];
 
-  dataSource : Course [] = [
+  courseList : Course [] = [
     {
       id: "01",
       name: 'Angular',
@@ -54,13 +54,15 @@ element: any;
 
             value["id"] = generateId(4);
 
-            this.dataSource = [...this.dataSource, value]
+            this.courseList = [...this.courseList, value]
         }
       });
     }
 
+    // Parte del codigo para borrar el curso de la lista
+
     deleteCourseById(id: string){
-      this.dataSource = this.dataSource.filter((el)=>el.id != id)
+      this.courseList = this.courseList.filter((el)=>el.id != id)
     }
 
 }

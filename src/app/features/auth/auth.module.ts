@@ -5,6 +5,7 @@ import { LoginModule } from './login/login.module';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
+import { AuthRoutingModule } from './auth-routing.module';
 
 
 
@@ -15,7 +16,11 @@ import {MatSelectModule} from '@angular/material/select';
   ],
   exports: [AuthComponent],
   imports: [
-    CommonModule,LoginModule,MatCardModule,MatIconModule,MatSelectModule,
+    CommonModule,
+    MatCardModule,
+    MatIconModule,
+    MatSelectModule,
+    AuthRoutingModule
   ]
 })
 export class AuthModule { }

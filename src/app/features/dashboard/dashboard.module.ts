@@ -9,6 +9,7 @@ import {MatInputModule} from '@angular/material/input';
 import { CoursesModule } from './courses/courses.module';
 import {MatListModule} from '@angular/material/list';
 import { SharedModule } from '../../shared/shared.module';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 
 
 
@@ -26,9 +27,9 @@ import { SharedModule } from '../../shared/shared.module';
     MatIconModule,
     MatToolbarModule,
     MatInputModule,
-    CoursesModule,
     MatListModule,
-    SharedModule
+    SharedModule,
+    DashboardRoutingModule
 
   ]
 })
